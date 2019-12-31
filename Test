@@ -1,0 +1,1060 @@
+
+
+<html>
+    <head>
+        <title> Mission Impossible </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?fbclid=IwAR1hTCtmHG7STfGmuQvIr5GhxAmUuLHw4ZwuKRrUimRzIv1r_5i3TG9quiU">
+    <style>
+        body
+        {
+            padding:0px;
+            margin:0px;
+            background-color: white;
+        }
+        .bck
+        {
+            overflow: hidden;
+            height: 906px;
+        }
+                                                                /* the header bar starts here          */
+        .hbar
+        {
+            width: 100%;
+            height: 30px;
+            background: white;
+        }
+
+        .hbar .hu 
+        {
+            color: rgb(170, 170, 170);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 0px;
+            transform: translateX(-80px);
+        }
+        .hbar .hu li
+        {
+            margin:10px 20px;
+            margin-top: 16px;
+        }
+        .hu li:hover 
+        {
+            color: #00a8f3;
+            font-weight: bold;
+        }
+                                                                /*          the left bar starts here          */        
+        .lbar
+        {
+            width: 3%;
+            height: 100%;
+            background: rgb(209, 206, 206);
+            border-top-right-radius: 20px;
+            float: left;           
+        }
+        .leftbar
+        {
+            margin-top: -20px;
+        }
+        .leftbar .sidebox
+        {
+            height: 35px;
+            width: 35px;
+            background: white;
+            color: grey;
+            margin: 30px auto;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            transition: 0.5s;
+            position: relative;
+        }
+        .sidebox .redc
+        {
+            height: 12px;
+            width: 12px;
+            background: rgb(236, 72, 72);
+            border-radius: 50%;
+            position: absolute;
+            right: -5px;
+            top: -3px;
+        }
+        .sidebox .greenc
+        {
+            height: 12px;
+            width: 12px;
+            background: rgb(66, 197, 66);
+            border-radius: 50%;
+            position: absolute;
+            right: -5px;
+            top: -3px;
+        }
+        .sidebox:hover
+        {
+            background: rgb(52, 52, 255);
+            color: white;
+        }
+                                                        /* the 1st box on the left starts here */
+        .lcontent
+        {
+            height: 100%;
+            width: 15%;
+            float: left;
+            padding: 0px;
+        }
+        .lcontent .leftc
+        {
+            width: 75%;
+            height: 100%;
+            margin: 0 auto;
+            transform: translatey(20px);
+        }
+                                            /* box1 content */
+        .leftc .box1
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+        .box1 div
+        {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .box1 span
+        {
+            color: grey;
+            font-size: 12px;
+        }
+                                            /* box2 content */
+        .leftc .box2
+        {
+            width: 100%;
+            height: 50px;
+            margin-top: 30px;
+            position: relative;
+        }
+        .box2 .fa-sort
+        {
+            height: 30px;
+            width: 30px;
+            border-radius: 5px;
+            background: rgb(221, 214, 214);
+            color: black;
+            font-size: 22px; 
+            position: absolute;
+            top: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box2 ul
+        {
+            font-weight: bold;
+            position: absolute;
+            top: -10px;
+            margin-left: 5px;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .box2 li
+        {
+            list-style: none;
+            font-weight: normal;
+            margin-top: 10px;
+            font-size: 12px;
+            color: grey;
+        }
+        .box2 li span
+        {
+            color: #00a8f3;
+            cursor: pointer;
+        }
+                                            /* box3 content */
+        .leftc .box3
+        {
+            width: 100%;
+            height: 150px;
+            margin-top: 30px;
+            position: relative;
+            padding: 0px;
+        }
+        .box3 .fa-location-arrow
+        {
+            height: 30px;
+            width: 30px;
+            border-radius: 5px;
+            background: rgb(221, 214, 214);
+            color: black;
+            font-size: 22px; 
+            position: absolute;
+            top: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box3 .box3big
+        {
+            margin-left: 45px;
+        }
+        .box3big .box3header
+        {
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .box3big .box3content
+        {
+            font-size: 12px;
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .box3big ul
+        {
+            padding: 0px;
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+            list-style: none;
+        }
+        .box3big li
+        {
+            margin-top: 5px;
+            transition: 0.5s;
+            font-size: 14px;
+        }
+        .box3big li:hover
+        {
+            color: #00a8f3;
+            cursor: pointer;
+            font-size: 16px;
+        }
+                                            /* box4 content */
+        .leftc .box4
+        {
+            width: 100%;
+            height: 145px;
+            margin-top: 30px;
+            position: relative;
+            padding: 0px;
+        }
+        .box4 .fa-usd
+        {
+            height: 30px;
+            width: 30px;
+            border-radius: 5px;
+            background: rgb(221, 214, 214);
+            color: black;
+            font-size: 22px; 
+            position: absolute;
+            top: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box4 .box4big
+        {
+            margin-left: 45px;
+        }
+        .box4header
+        {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            transform: translatey(10px);
+        }
+        .box4big ul
+        {
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+            list-style: none;
+            padding: 0px;
+            margin-top: 20px;
+        }
+        .box4big li
+        {
+            margin-top: 10px;
+            transition: 0.5s;
+            font-size: 15px;
+        }
+        .box4big li:hover
+        {
+            color: #00a8f3;
+            cursor: pointer;
+            font-size: 16px;
+        }
+                                            /* box5 content */
+        .leftc .box5
+        {
+            width: 100%;
+            height: 120px;
+            margin-top: 30px;
+            position: relative;
+            padding: 0px;
+        }
+        .box5 .fa-briefcase
+        {
+            height: 30px;
+            width: 30px;
+            border-radius: 5px;
+            background: rgb(221, 214, 214);
+            color: black;
+            font-size: 20px; 
+            position: absolute;
+            top: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box5 .box5big
+        {
+            margin-left: 45px;
+        }
+        .box5header
+        {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            transform: translatey(5px);
+        }
+        .box5big ul
+        {
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+            list-style: none;
+            padding: 0px;
+            margin-top: 15px;
+        }
+        .box5big li
+        {
+            margin-top: 10px;
+            transition: 0.5s;
+            font-size: 15px;
+        }
+        .box5big li:hover
+        {
+            color: #00a8f3;
+            cursor: pointer;
+            font-size: 16px;
+        }
+                                                    /* box6 content */
+        .leftc .box6
+        {
+            width: 100%;
+            height: 80px;
+            margin-top: 30px;
+            position: relative;
+            padding: 0px;
+        }
+        .box6 .fa-map-marker
+        {
+            height: 30px;
+            width: 30px;
+            border-radius: 5px;
+            background: rgb(221, 214, 214);
+            color: black;
+            font-size: 20px; 
+            position: absolute;
+            top: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box6 .box6big
+        {
+            margin-left: 45px;
+        }
+        .box6header
+        {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            transform: translatey(5px);
+        }
+        .box6big span
+        {
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+                                                        /* the Middle box starts here          */
+        .mcontent
+        {
+            height: 100%;
+            width: 55%;
+            background: rgb(209, 206, 206);
+            float: left;
+            border-top-right-radius: 25px;
+            border-top-left-radius: 25px;
+            transform: translatey(20px);
+        }
+        .mcontent .middleboxbck
+        {
+            width: 95%;
+            height: 100%;
+            margin: 20 auto;
+            position: relative;
+        }
+                        /* The Top of the Middle box  */
+        .middleboxbck .topbox
+        {
+            width: 100%;
+            height: 120px;
+            background-color: white;
+            border-radius: 14px;
+            display: flex;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+                /* Left Content */
+        .topbox .topleft
+        {
+            width: 50%;
+            height: 75%;
+            margin: 1.7% 2%;
+            background: white;
+        }
+        .topleft div
+        {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .topleft span
+        {
+            color: grey;
+            font-size: 14px;
+        }
+        .topleft .search
+        {
+            height: 30px;
+            width: 100%;
+            display: flex;
+            background: whitesmoke;
+            padding: 5px;
+            border-radius: 8px;
+            transform: translatey(10px);
+            color: grey;
+        }
+        .search input
+        {
+            width: 95%;
+            background: whitesmoke;
+            border-top-style: hidden;
+            border-right-style: hidden;
+            border-left-style: hidden;
+            border-bottom-style: hidden;    
+            outline: none;
+            padding-left: 2px;
+        }
+        .search .fa-search
+        {
+            transform: translateY(3px);
+            cursor: pointer;
+        }
+                /* Right Content */
+        .topbox .topright
+        {
+            width: 50%;
+            height: 75%;
+            margin: 1.7% 2%;
+            background: white;
+        }
+        .topright div
+        {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .topright span
+        {
+            color: grey;
+            font-size: 14px;
+        }
+        .topright .search
+        {
+            height: 30px;
+            width: 100%;
+            display: flex;
+            background: whitesmoke;
+            padding: 5px;
+            border-radius: 8px;
+            transform: translatey(10px);
+            color: grey;
+        }
+        .search input
+        {
+            width: 95%;
+            background: whitesmoke;
+            border-top-style: hidden;
+            border-right-style: hidden;
+            border-left-style: hidden;
+            border-bottom-style: hidden;    
+            outline: none;
+            padding-left: 2px;
+        }
+        .search .fa-map-marker
+        {
+            transform: translateY(3px);
+            cursor: pointer;
+        }
+                          /* The 2nd box of the Middle box  */
+        .secondbox
+        {
+            width: 65%;
+            height: 50px;
+            border-radius: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 5px auto;
+            float: right;
+        }  
+                   /* 2nd box Content */
+        .secondbox input
+        {
+            width: 350px;
+            height: 50px;
+            float: left;
+            background: #00a8f3;
+            border-radius: 12px;
+            margin: 0 auto;
+            border: 5px solid white;
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+            outline: none;
+        }
+        .secondbox .fa-th-large
+        {
+            height: 35px;
+            width: 35px;
+            background: white;
+            color: rgb(170, 170, 170);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            float: right;
+            cursor: pointer;
+        }
+        .secondbox .fa-bars
+        {
+            height: 35px;
+            width: 35px;
+            background: white;
+            color: rgb(170, 170, 170);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            float: right;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+                                /* Google box of the Middle box  */
+        .middleboxbck .googlebox
+        {
+            width: 100%;
+            height: 120px;
+            background-color: white;
+            border-radius: 14px;
+            display: flex;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 30px auto;
+        }
+                   /* left Content of Google box */
+        .googlebox .gtopleft
+        {
+            width: 50%;
+            height: 75%;
+            margin: 1.7% 2%;
+            background: white; 
+            display: flex;   
+        }
+        .gtopleft img
+        {
+            width: 80px;
+            height: 80px;
+        }
+        .gtopleft .leftcontent
+        {
+            margin-left: 10px;
+            font-size: 30px !important;
+
+        }
+        .googlebox .gtopleft span
+        {
+            width: 100%;
+            height: 10px;
+            font-weight: normal;
+            font-size: 15px;
+            position: relative;
+            bottom: -5px;
+            color: grey;
+        }
+        .googlebox .normal
+        {
+            font-weight: normal;
+            margin-top: 20px;
+            font-size: 12px;
+            color: grey;
+        }
+
+        .googlebox .gtopright
+        {
+            width: 50%;
+            height: 75%;
+            margin: 1.7% 2%;
+            background: white;
+            text-align: right;
+            position: relative;
+        }
+        .gtopright div
+        {
+            font-size: 18px;
+            color: grey;
+            text-align: end;
+            margin-top: 15px;
+        }
+        .gtopright p
+        {
+            width: 100%;
+            font-size: 16px;
+            color: #00a8f3;
+            position: absolute;
+            bottom: 5px;
+            margin: 0px;
+        }
+                                /* Airbnb box of the Middle box  */
+        .middleboxbck .airbnbbox
+        {
+            width: 100%;
+            height: 120px;
+            background-color: white;
+            border-radius: 14px;
+            display: flex;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 10px;
+        }
+        .airbnbbox .airtopleft
+        {
+            width: 50%;
+            height: 75%;
+            margin: 1.7% 2%;
+            background: white; 
+            display: flex;   
+        }
+        .airtopleft img
+        {
+            width: 80px;
+            height: 80px;
+        }
+        .airtopleft .aleftcontent
+        {
+            margin-left: 10px;
+            font-size: 30px !important;
+        }
+        .airbnbbox .airtopleft span
+        {
+            width: 100%;
+            height: 10px;
+            font-weight: normal;
+            font-size: 15px;
+            position: relative;
+            bottom: -5px;
+            color: grey;
+        }
+        .airbnbbox .normal
+        {
+            font-weight: normal;
+            margin-top: 20px;
+            font-size: 12px;
+            color: grey;
+        }
+
+        .airbnbbox .atopright
+        {
+            width: 50%;
+            height: 75%;
+            margin: 1.7% 2%;
+            background: white;
+            text-align: right;
+            position: relative;
+        }
+        .atopright div
+        {
+            font-size: 18px;
+            color: grey;
+            text-align: end;
+            margin-top: 15px;
+        }
+        .atopright p
+        {
+            width: 100%;
+            font-size: 16px;
+            color: #00a8f3;
+            position: absolute;
+            bottom: 5px;
+            margin: 0px;
+        }
+                                /* Facebook box of the Middle box  */
+        .middleboxbck .facebook
+        {
+            width: 100%;
+            height: 120px;
+            background-color: white;
+            border-radius: 14px;
+            display: flex;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 30px auto;
+        }
+        .facebook .ftopleft
+        {
+            width: 50%;
+            height: 75%;
+            margin: 1.7% 2%;
+            background: white; 
+            display: flex;   
+        }
+        .ftopleft img
+        {
+            width: 100px;
+            height: 80px;
+            transform: translatex(-10px);
+        }
+        .ftopleft .fleftcontent
+        {
+            margin-left: 10px;
+            font-size: 30px !important;
+            transform: translatex(-20px);
+        }
+        .facebook .ftopleft span
+        {
+            width: 100%;
+            height: 10px;
+            font-weight: normal;
+            font-size: 15px;
+            position: relative;
+            bottom: -5px;
+            color: grey;
+        }
+        .facebook .normal
+        {
+            font-weight: normal;
+            margin-top: 20px;
+            font-size: 12px;
+            color: grey;
+        }
+
+        .facebook .ftopright
+        {
+            width: 50%;
+            height: 75%;
+            margin: 1.7% 2%;
+            background: white;
+            text-align: right;
+            position: relative;
+        }
+        .ftopright div
+        {
+            font-size: 18px;
+            color: grey;
+            text-align: end;
+            margin-top: 15px;
+        }
+        .ftopright p
+        {
+            width: 100%;
+            font-size: 16px;
+            color: #00a8f3;
+            position: absolute;
+            bottom: 5px;
+            margin: 0px;
+        }
+
+                                                        /* the right box starts here          */
+        .rcontent
+        {
+            height: 100%;
+            width: 27%;
+            background: white;
+            float: left;
+            transform: translatey(20px);
+            font-family: Arial, Helvetica, sans-serif;
+        } 
+                 /* Body  */
+        .rcontent .rightboxbck
+        {
+            width: 90%;
+            margin: 0 auto;
+            padding: 12px;
+        }
+             /*   Header */
+        .rightboxbck .rheader
+        {
+            width: 90%;
+            background: white;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .rheader img
+        {
+            width: 90px;
+            height: 90px;
+        }
+        .rheader div
+        {
+            width: 120px;
+            height: 120px;
+            box-shadow: 1px 1px 5px darkgrey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .rightboxbck .rheader>p
+        {
+            font-size: 50px;
+            font-weight: bold;
+            margin: 20px auto;
+            transform: translate(5px) translateY(-10px);
+        }
+             /*   Content */
+        .rightboxbck .rbox1
+        {
+            width: 90%;
+            background: white;
+            margin: 15px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .rightboxbck .boldheader
+        {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .rightboxbck .pcontent
+        {
+            font-size: 12px;
+            margin: 0px 15px;
+            text-align: center;
+            color: grey;
+        }
+             /* Bottom */
+        .rightboxbck .bottom
+        {
+            width: 100%;
+            height: 40px;
+            margin-top: 200px;
+            background: #00a8f3;
+            border-radius: 10px;
+            color: white;
+            font-size: 22px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    </style>
+    </head>
+    <body>
+        <!-- Here We start -->
+        <div>
+            <!-- Header -->
+            <div class="hbar">
+                <ul class="hu">
+                    <li> Find Jobs</li>
+                    <li> Company Reviews </li>
+                    <li> Find Salaries </li>
+                    <li> Find Resources </li>
+                    <li> Employers / post job </li>
+                </ul>
+            </div>
+            <!-- Every Thing -->
+            <div class="bck">
+            <!-- Left Bar -->
+                <div class="lbar">
+                    <div class="leftbar">
+                        <i class="fa fa-bolt sidebox" aria-hidden="true"></i> 
+                        <div class="sidebox"> <div class="redc"></div> <i class="fa fa-bell-o" aria-hidden="true"></i> </div>
+                        <div class="sidebox"> <div class="greenc"></div>  <i class="fa fa-envelope-o" aria-hidden="true"></i> </div>
+                        <i class="fa fa-cog sidebox" aria-hidden="true"></i>
+                    </div>    
+                </div>
+            <!-- Left BOX-->
+                 <div class="lcontent">
+                        <div class="leftc">    
+                            <div class="box1">                                         
+                                <div> JOBS IN </div>
+                                <span> Singapore, Southren Malayisa </span>
+                            </div>
+                            <div class="box2">
+                                <i class="fa fa-sort" aria-hidden="true"></i>
+                                <span>
+                                    <ul> Sort by :
+                                        <li>
+                                            Relevance - <span> date </span>
+                                        </li>
+                                    </ul>
+                                </span>
+                            </div>
+                            <div class="box3">
+                                <i class="fa fa-location-arrow" aria-hidden="true"></i> 
+                                <div class="box3big">
+                                    <div class="box3header"> Distance :</div>
+                                    <div class="box3content"> Exact Location only </div>
+                                    <ul>
+                                        <li> Within 5 kilometers </li>
+                                        <li> Within 10 kilometers </li>
+                                        <li> Within 15 kilometers </li>
+                                        <li> Within 20 kilometers </li>
+                                        <li> Within 25 kilometers </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="box4">
+                                <i class="fa fa-usd" aria-hidden="true"></i>
+                                <div class="box4big">
+                                    <div class="box4header"> Salary Estimate </div>
+                                    <ul>
+                                        <li> $ 3.322.800+ (4) </li>
+                                        <li> $ 9.356.500+ (3) </li>
+                                        <li> $ 7.456.359+ (2) </li>
+                                        <li> $ 2.356.123+ (1) </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="box5">
+                                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                                <div class="box5big">
+                                    <div class="box5header"> Job Type </div>
+                                    <ul>
+                                        <li> Full Time (4) </li>
+                                        <li> Intership (3) </li>
+                                        <li> Fresher (2) </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="box6">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <div class="box6big">
+                                    <div class="box6header"> Location </div><br>
+                                    <span> Node Developer Jobs </span><br>
+                                    <span> Nationwide </span>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            <!-- MIddle BOX -->
+                <div class="mcontent">
+                    <div class="middleboxbck">
+                        <div class="topbox">
+                            <div class="topleft">
+                                <div> What </div>
+                                <span> Job Title, Keywords, or company </span>
+                                <div class="search">
+                                    <input type="text" placeholder="Within 25 kilometers">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="topright">
+                                <div> Where </div>
+                                <span> City or State </span>
+                                <div class="search">
+                                    <input type="text" placeholder="Singapore, Southren Malayisa">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="secondbox">
+                            <div>
+                                <input type="button" value="FIND JOBS">
+                                <i class="fa fa-th-large" aria-hidden="true"></i>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="googlebox">
+                            <div class="gtopleft">
+                                <img src="google.jpg" alt="Google Logo">
+                                <div class="leftcontent">
+                                    <div> Google </div> 
+                                    <span> Full Stack Developer </span>
+                                    <div class="normal"> 3 days ago * 6 Applied</div>        
+                                </div>
+                            </div>
+                            <div class="gtopright">
+                                <div> Singapore </div> <br>
+                                <p> VIEW DETAILS </p>
+                            </div>
+                        </div>
+                        <div class="airbnbbox">
+                            <div class="airtopleft">
+                                <img src="airbnb.png" alt="Airbnb Logo">
+                                <div class="aleftcontent">
+                                    <div> Airbnb </div> 
+                                    <span> Mean Stack Developer </span>
+                                    <div class="normal"> 4 days ago * 12 Applied</div>        
+                                </div>
+                            </div>
+                            <div class="atopright">
+                                <div> Malayisa </div> <br>
+                                <p> VIEW DETAILS </p>
+                            </div>
+                        </div>
+                        <div class="facebook">
+                            <div class="ftopleft">
+                                <img src="facebook.png" alt="facebook Logo">
+                                <div class="fleftcontent">
+                                    <div> Facebook </div> 
+                                    <span> Full Stack Developer </span>
+                                    <div class="normal"> 4 days ago * 12 Applied</div>        
+                                </div>
+                            </div>
+                            <div class="ftopright">
+                                <div> Singapore </div> <br>
+                                <p> VIEW DETAILS </p>
+                            </div>
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>  
+                </div>
+            <!-- Right BOX ( We almost there :) ) -->
+                <div class="rcontent">
+                    <div class="rightboxbck">
+                        <div class="rheader">
+                            <div> <img src="google.jpg" alt="Google Pic"> </div>
+                            <p> Google </p>
+                        </div>
+                        <div class="rbox1">
+                            <div class="boldheader"> Full Stack Developer </div>
+                            <p class="Pcontent"> Google - Singapore, Southern Malayisa </p>
+                        <br>
+                            <div class="boldheader"> Job Summary </div><br>
+                            <p class="pcontent"> Shipgig Ventures Pvt. Ltd. is looking for the full Stack Developer ( 1 years to 5 years) of experience with good logical skills. </p>
+                        <br>
+                            <div class="boldheader"> Skill Sets Required </div><br>
+                            <p class="pcontent"> Front end : Angular JS, HTML, CSS</p>
+                            <p class="pcontent"> Back end : Node JS, SQL, SQL LITE </p>
+                        <br>
+                        <div class="boldheader"> Venue </div><br>
+                        <p class="pcontent"> Shipgig Ventures, H - 55,3rd floor, Sector - 63, Noida - 201301(In Front Of Dena Bank, Near Elextronic City Metro Station)</p>
+                        <br>
+                        <div class="boldheader"> Contact </div><br>
+                        <p class="pcontent"> +91-8874700071 , +91120-4271421 </p>
+                        <p class="pcontent"> Walk-in Time : 2 pm to 6 pm(Monday-Friday)</p>
+                        </div>
+                        <div class="bottom">
+                            <p> APPLY NOW</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Finished !! Finally :) :) Gzz -->
+    </body>
+</html>
